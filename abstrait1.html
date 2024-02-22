@@ -29,56 +29,15 @@
 	</div>
 
 	<!-- Header Section -->
-	<header class="header">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-4 col-md-3 order-2 order-sm-1">
-					<div class="header__social">
-					</div>
-				</div>
-				<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center site-logo">
-					<a href="./index.html" class="site-logo">
-						Alain LE TOCQUEC
-					</a>
-				</div>
-				<div class="col-sm-4 col-md-3 order-3 order-sm-3">
-					<div class="header__switches">
-					</div>
-				</div>
-			</div>
-			<nav class="main__menu">
-				<ul class="nav__menu">
-					<li><a href="./index.html">Accueil</a></li>
-					<li><a href="./artiste.html">L'artiste</a></li>
-					<li><a href="">Figuratif</a>
-						<ul class="sub__menu">
-							<li><a href="./figuratif1.html">Série 1</a></li>
-							<li><a href="./figuratif2.html">Série 2</a></li>
-							<li><a href="./autoportraits.html">Autoportraits</a></li>
-						</ul>
-					</li>
-					<li><a href="./blog.html">Abstraction</a>
-						<ul class="sub__menu">
-							<li><a href="./abstrait1.html">Série 1</a></li>
-							<li><a href="./abstrait2.html">Série 2</a></li>
-							<li><a href="./abstrait3.html">Série 3</a></li>
-							<li><a href="./abstrait4.html">Série 4</a></li>
-							<li><a href="./abstrait5.html">Série 5</a></li>
-						</ul>
-					</li>
-					<li><a href="./blog.html">Collages</a>
-						<ul class="sub__menu">
-							<li><a href="./collage1.html">Série 1</a></li>
-							<li><a href="./collage2.html">Série 2</a></li>
-							<li><a href="./collage3.html">Série 3</a></li>
-							<li><a href="./collage4.html">Série 4</a></li>
-						</ul>
-					</li>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<div id="headerContainer"></div>
+	<!-- Script pour charger dynamiquement l'en-tête -->
+	<script>
+	  (async function() {
+		const response = await fetch('header.html');
+		const html = await response.text();
+		document.getElementById('headerContainer').innerHTML = html;
+	  })();
+	</script>
 	<!-- Header Section end -->
 
 	<!-- About Page -->
