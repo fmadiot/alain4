@@ -29,56 +29,15 @@
 	</div>
 
 	<!-- Header Section -->
-	<header class="header">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-4 col-md-3 order-2 order-sm-1">
-					<div class="header__social">
-					</div>
-				</div>
-				<div class="col-sm-4 col-md-6 order-1  order-md-2 text-center site-logo">
-					<a href="./index.html" class="site-logo">
-						Alain LE TOCQUEC
-					</a>
-				</div>
-				<div class="col-sm-4 col-md-3 order-3 order-sm-3">
-					<div class="header__switches">
-					</div>
-				</div>
-			</div>
-			<nav class="main__menu">
-				<ul class="nav__menu">
-					<li><a href="./index.html">Accueil</a></li>
-					<li><a href="./artiste.html">L'artiste</a></li>
-					<li><a href="">Figuratif</a>
-						<ul class="sub__menu">
-							<li><a href="./figuratif1.html">Série 1</a></li>
-							<li><a href="./figuratif2.html">Série 2</a></li>
-							<li><a href="./autoportraits.html">Autoportraits</a></li>
-						</ul>
-					</li>
-					<li><a href="./blog.html">Abstraction</a>
-						<ul class="sub__menu">
-							<li><a href="./abstrait1.html">Série 1</a></li>
-							<li><a href="./abstrait2.html">Série 2</a></li>
-							<li><a href="./abstrait3.html">Série 3</a></li>
-							<li><a href="./abstrait4.html">Série 4</a></li>
-							<li><a href="./abstrait5.html">Série 5</a></li>
-						</ul>
-					</li>
-					<li><a href="./blog.html">Collages</a>
-						<ul class="sub__menu">
-							<li><a href="./collage1.html">Série 1</a></li>
-							<li><a href="./collage2.html">Série 2</a></li>
-							<li><a href="./collage3.html">Série 3</a></li>
-							<li><a href="./collage4.html">Série 4</a></li>
-						</ul>
-					</li>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<div id="headerContainer"></div>
+	<!-- Script pour charger dynamiquement l'en-tête -->
+	<script>
+	  (async function() {
+		const response = await fetch('header.html');
+		const html = await response.text();
+		document.getElementById('headerContainer').innerHTML = html;
+	  })();
+	</script>
 	<!-- Header Section end -->
 
 	<!-- About Page -->
@@ -157,47 +116,35 @@
 			</div>
 		</div>
 	</div>
-		<div class="container recent__post">
-			<div class="text-center">
-				<h2>Série suivante</h2>
-			</div>
-			<div class="row blog__grid text-white">
-			<div class="col-md-4 col-lg-4 col-xl-4">
-			</div>
-			<div class="col-md-4 col-lg-4 col-xl-4">
-				<a href="./abstrait4.html">
-				<div class="blog__item set-bg" data-setbg="img/abstrait4/peinture_32.jpg">
-					<div class="blog__content">
-						<div class="blog__date">Abstrait</div>
-						<h4>Série 4</h4>
-					</div>
-				</div>
-				</a>
-			</div>
-		</div>
 
-	<!-- Footer Section -->
-	<footer class="footer__section">
-		<div class="container">
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			<div class="footer__copyright__text">
-				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tous droits réservés | Créé avec le template <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-			</div>
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<div class="container recent__post">
+		<div class="text-center">
+			<h3 class="about__title">Série suivante</h2>
 		</div>
-	</footer>
-	<!-- Footer Section end -->
-
-	<!-- Search Begin -->
-	<div class="search-model">
-		<div class="h-100 d-flex align-items-center justify-content-center">
-			<div class="search-close-switch">+</div>
-			<form class="search-model-form">
-				<input type="text" id="search-input" placeholder="Search here.....">
-			</form>
+		<div class="row blog__grid text-white">
+		<div class="col-md-4 col-lg-4 col-xl-4">
+		</div>
+		<div class="col-md-4 col-lg-4 col-xl-4">
+			<div id="nextVignetteContainer"></div>
+			<script>
+			  (async function() {
+				const response = await fetch('./vignette-abstrait4.html');
+				const html = await response.text();
+				document.getElementById('nextVignetteContainer').innerHTML = html;
+			  })();
+			</script>
 		</div>
 	</div>
-	<!-- Search End -->
+
+	<div id="footerContainer"></div>
+	<!-- Script pour charger dynamiquement le footer -->
+	<script>
+	  (async function() {
+		const response = await fetch('./footer.html');
+		const html = await response.text();
+		document.getElementById('footerContainer').innerHTML = html;
+	  })();
+	</script>
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/vendor/jquery-3.2.1.min.js"></script>

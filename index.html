@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Boto | Photography HTML Template</title>
+	<title>Alain Le Tocquec | Artiste Peintre</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Boto Photo Studio HTML Template">
-	<meta name="keywords" content="photo, html">
+	<meta name="description" content="Oeuvres de l'artiste peintre Alain Le Tocquec">
+	<meta name="keywords" content="peintures, collages, surréalisme, nantes, bretagne">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -39,154 +39,166 @@
 	</script>
 	<!-- Header Section end -->
 
-	<!-- Blog Page -->
 	<section class="blog__page">
 		<div class="blog__warp">
 			<div class="row blog__grid text-white">
 				<div class="col-lg-4 col-xl-3">
 					<a href="./artiste.html">
 					<div class="blog__item blog__item--long set-bg" data-setbg="img/alain/alain_06.JPG">
-								<div class="blog__content">
-									<h3>L'artiste</h3>
-								</div>
+						<div class="blog__content">
+							<h3>L'artiste</h3>
+						</div>
 					</div>
 					</a>
 				</div>
 				<div class="col-lg-8 col-xl-9">
 					<div class="row">
 						<div class="col-md-4 col-lg-5 col-xl-4">
-							<a href="./abstrait1.html">
-							<div class="blog__item set-bg" data-setbg="img/abstrait1/peinture_02.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Abstrait</div>
-									<h4>Série 1</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteAbstrait1Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-abstrait1.html');
+								const html = await response.text();
+								document.getElementById('vignetteAbstrait1Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-5 col-xl-4">
-							<a href="./abstrait2.html">
-							<div class="blog__item set-bg" data-setbg="img/abstrait2/peinture_04.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Abstrait</div>
-									<h4>Série 2</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteAbstrait2Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-abstrait2.html');
+								const html = await response.text();
+								document.getElementById('vignetteAbstrait2Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-5 col-xl-4">
-							<a href="./abstrait3.html">
-							<div class="blog__item set-bg" data-setbg="img/abstrait3/peinture_01.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Abstrait</div>
-									<h4>Série 3</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteAbstrait3Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-abstrait3.html');
+								const html = await response.text();
+								document.getElementById('vignetteAbstrait3Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-5 col-xl-4">
-							<a href="./abstrait4.html">
-							<div class="blog__item set-bg" data-setbg="img/abstrait4/peinture_32.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Abstrait</div>
-									<h4>Série 4</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteAbstrait4Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-abstrait4.html');
+								const html = await response.text();
+								document.getElementById('vignetteAbstrait4Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-5 col-xl-4">
-							<a href="./abstrait5.html">
-							<div class="blog__item set-bg" data-setbg="img/abstrait5/dessin_04.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Abstrait</div>
-									<h4>Série 5</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteAbstrait5Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-abstrait5.html');
+								const html = await response.text();
+								document.getElementById('vignetteAbstrait5Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-5 col-xl-4">
-							<a href="./figuratif1.html">
-							<div class="blog__item set-bg" data-setbg="img/figuratif1/fig_14.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Figuratif</div>
-									<h4>Série 1</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteFiguratif1Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-figuratif1.html');
+								const html = await response.text();
+								document.getElementById('vignetteFiguratif1Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-12 col-xl-12">
 					<div class="row">
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<a href="./figuratif2.html">
-							<div class="blog__item set-bg" data-setbg="img/figuratif2/fig_04.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Figuratif</div>
-									<h4>Série 2</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteFiguratif2Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-figuratif2.html');
+								const html = await response.text();
+								document.getElementById('vignetteFiguratif2Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<a href="./autoportraits.html">
-							<div class="blog__item set-bg" data-setbg="img/autoportraits/auto_02.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Figuratif</div>
-									<h4>Autoportraits</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteAutoportraitsContainer"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-autoportraits.html');
+								const html = await response.text();
+								document.getElementById('vignetteAutoportraitsContainer').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<a href="./collage1.html">
-							<div class="blog__item set-bg" data-setbg="img/collage1/collage_01.png">
-								<div class="blog__content">
-									<div class="blog__date">Collage</div>
-									<h4>Série 1</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteCollage1Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-collage1.html');
+								const html = await response.text();
+								document.getElementById('vignetteCollage1Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<a href="./collage2.html">
-							<div class="blog__item set-bg" data-setbg="img/collage2/collage_21.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Collage</div>
-									<h4>Série 2</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteCollage2Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-collage2.html');
+								const html = await response.text();
+								document.getElementById('vignetteCollage2Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<a href="./collage3.html">
-							<div class="blog__item set-bg" data-setbg="img/collage3/collage_32.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Collage</div>
-									<h4>Série 3</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteCollage3Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-collage3.html');
+								const html = await response.text();
+								document.getElementById('vignetteCollage3Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<a href="./collage4.html">
-							<div class="blog__item set-bg" data-setbg="img/collage4/collage_44.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Collage</div>
-									<h4>Série 4</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteCollage4Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-collage4.html');
+								const html = await response.text();
+								document.getElementById('vignetteCollage4Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 						<div class="col-md-4 col-lg-3 col-xl-3">
-							<a href="./collage5.html">
-							<div class="blog__item set-bg" data-setbg="img/collage5/collage_71.jpg">
-								<div class="blog__content">
-									<div class="blog__date">Collage</div>
-									<h4>Série 5</h4>
-								</div>
-							</div>
-							</a>
+							<div id="vignetteCollage5Container"></div>
+							<!-- Script pour charger dynamiquement la vignette -->
+							<script>
+							  (async function() {
+								const response = await fetch('./vignette-collage5.html');
+								const html = await response.text();
+								document.getElementById('vignetteCollage5Container').innerHTML = html;
+							  })();
+							</script>
 						</div>
 					</div>
 				</div>
@@ -194,30 +206,17 @@
 			</div>
 		</div>
 	</section>
-	<!-- Blog Page end -->
 
-	<!-- Footer Section -->
-	<footer class="footer__section">
-		<div class="container">
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			<div class="footer__copyright__text">
-				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-			</div>
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-		</div>
-	</footer>
-	<!-- Footer Section end -->
+	<div id="footerContainer"></div>
+	<!-- Script pour charger dynamiquement le footer -->
+	<script>
+	  (async function() {
+		const response = await fetch('./footer.html');
+		const html = await response.text();
+		document.getElementById('footerContainer').innerHTML = html;
+	  })();
+	</script>
 
-	<!-- Search Begin -->
-	<div class="search-model">
-		<div class="h-100 d-flex align-items-center justify-content-center">
-			<div class="search-close-switch">+</div>
-			<form class="search-model-form">
-				<input type="text" id="search-input" placeholder="Search here.....">
-			</form>
-		</div>
-	</div>
-	<!-- Search End -->
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/vendor/jquery-3.2.1.min.js"></script>
