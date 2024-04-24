@@ -22,6 +22,18 @@
   }
 }
 
+.citation {
+	line-height: 1.4;
+	margin: 20px;
+	font-style: italic;
+}
+
+.reference {
+	line-height: 1.4;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
 
 .site-logo {
 	font-size: 40px;
@@ -363,7 +375,8 @@ ol {
 .header__social a,
 .header__switches a {
 	display: inline-block;
-	color: #222222;
+	color: #7E858B;
+	font-weight: 700;
 	padding-top: 5px;
 	margin-right: 15px;
 	font-size: 16px;
@@ -394,7 +407,7 @@ ol {
 }
 
 .header__switches {
-	text-align: right;
+	text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -453,6 +466,11 @@ ol {
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
+}
+
+
+.header__switches:hover>a {
+	color: #8DB952;
 }
 
 .main__menu .nav__menu>li>a.menu--active {
@@ -887,6 +905,12 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	visibility: hidden;
 }
 
+@media (max-width: 900px) {
+	.fiche_oeuvre {
+		visibility: visible;
+	}
+}
+
 .gallery__item:hover div {
 	visibility: visible;
 }
@@ -1024,34 +1048,8 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	display: none;
 }
 
-.blog__article blockquote {
-	max-width: 1170px;
-	margin: 50px auto;
-	padding: 45px 45px 55px;
-	background-color: #EAEFE5;
-	background-image: url("../img/blog-single/quote.png");
-	background-repeat: no-repeat;
-	background-position: right 60px bottom -10px;
-}
 
-.blog__article blockquote p {
-	color: #222222;
-	font-size: 20px;
-	line-height: 1.5;
-	margin-bottom: 25px;
-}
 
-.blog__article blockquote h4 {
-	font-size: 16px;
-	margin-bottom: 10px;
-}
-
-.blog__article blockquote h5 {
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #8DB952;
-	letter-spacing: 2px;
-}
 
 .blog__banner {
 	max-width: 1170px;
