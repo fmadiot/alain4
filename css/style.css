@@ -663,13 +663,9 @@ ol {
 	font-size: 16px;
 }
 
-.footer__copyright__text i {
-	color: #d32a2a;
-}
 
 .footer__copyright__text a {
 	color: #7E858B;
-	text-decoration: underline;
 }
 
 .footer__copyright__text a:hover {
